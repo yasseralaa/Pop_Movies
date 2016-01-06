@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activites.MainActivity">
+    <item
+        android:id="@+id/most_popular"
+        android:orderInCategory="100"
+        android:title="Sort by most popular"
+       app:showAsAction="never" />
+    <item
+        android:id="@+id/highest_rated"
+        android:orderInCategory="100"
+        android:title="Sort by highest-rated"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/myfavourite"
+        android:orderInCategory="100"
+        android:title="My favourite movies"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_share"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/share"
+        android:title="Share"
+        android:actionProviderClass=
+            "android.widget.ShareActionProvider" />
+</menu>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/details_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailActivity"
+    >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <TableLayout
+            android:id="@+id/maintable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/originaltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:paddingTop="60dp"
+            android:paddingLeft="20dp"
+            android:text="Chappie"
+            android:textColor="#ffffff"
+            android:textSize="45dp"
+            android:textStyle="normal"
+            tools:context=".ItemDetailFragment"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+
+                android:id="@+id/movieposter"
+                android:background="#111" />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="30dp"
+              android:orientation="vertical"
+              >
+            <TextView
+                android:id="@+id/releasedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015"
+                android:textSize="30dp"
+                android:textStyle="normal" />
+
+              <TextView
+                  android:id="@+id/userrating"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="8.1/10"
+                  android:paddingTop="5dp"
+                  android:textSize="20dp"
+
+                  android:textStyle="normal|bold" />
+
+              <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:id="@+id/favourite"
+                  android:src="@drawable/favourite" />
+
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                >
+            <TextView
+                android:id="@+id/plotsynopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A ticking-time-bomb insomniac and a slippery so"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_height="1dp"
+                    android:layout_width="wrap_content"
+                    android:background="@android:color/darker_gray"/>
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/TrailersLayout"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/trailertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trailers"
+                    android:textSize="28dp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ReviewsLayout"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/reviewstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:textSize="28dp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
